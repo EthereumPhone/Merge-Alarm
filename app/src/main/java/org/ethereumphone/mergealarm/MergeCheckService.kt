@@ -108,7 +108,7 @@ class MergeCheckService: Service() {
         println("Merge date: $date")
         println("Seconds till merge: $timeToMerge")
         // 3600 is one hour
-        if (timeToMerge.toLong()<=57000) {
+        if (timeToMerge.toLong()<=3600) {
             mergeIsComing()
             isMergeComing = true
         }
